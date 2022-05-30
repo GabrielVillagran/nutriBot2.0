@@ -1,0 +1,843 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(243, 237, 237);
+    opacity: 0.9;
+}
+
+
+/* pantallas de 1025 en adelante (monitores) */
+
+@media screen and (min-width: 1025px) {
+    .loginContainer {
+        width: 1514px;
+        height: 200px;
+        background-color: rgb(243, 237, 237);
+        /* border-style: solid; */
+    }
+    /* estilo de los input */
+    input {
+        outline: none;
+        display: block;
+        width: 100%;
+        border: 1px solid;
+        margin: 0 0 20px;
+        padding: 10px 15px;
+        box-sizing: border-box;
+    }
+    .formularios {
+        position: relative;
+        left: 500px;
+        width: 600px;
+        height: 200px;
+        /* border-style: solid; */
+        background-color: rgb(243, 237, 237);
+    }
+    /* encabezado de pagina estilo */
+    .encabezadoPag {
+        width: 1514px;
+        height: 200px;
+        background-color: rgb(243, 237, 237);
+    }
+    /* logo */
+    .nutribot {
+        position: absolute;
+        left: 150px;
+    }
+    /* estilo de botones del encabezado */
+    button {
+        margin: 20px;
+    }
+    .bttn {
+        width: 200px;
+        height: 50px;
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 15px 30px;
+        font-family: 'Lato', sans-serif;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        left: 450px;
+        top: 40px;
+        display: inline-block;
+        outline: none;
+    }
+    .menu {
+        background: linear-gradient(0deg, rgba(24, 103, 75, 1) 0%, rgba(24, 207, 102, 1) 100%);
+        border: none;
+    }
+    .menu:hover {
+        background: linear-gradient(0deg, rgba(24, 103, 75, 1) 0%, rgba(24, 176, 75, 1) 100%);
+        border: none;
+    }
+    /* Contenedor generador de recetas aleatorias */
+    .contenedorRecetas {
+        background-color: rgb(243, 237, 237);
+        position: relative;
+        width: 1514px;
+        height: 730px;
+        /* border-style: solid; */
+        border-width: 3px;
+        top: 40px;
+    }
+    /* texto de bienvenida */
+    .headerTxt {
+        position: relative;
+        left: 340px;
+        top: 10px;
+        width: 900px;
+        font-size: 20pt;
+        font-weight: bold;
+        text-align: center;
+        /* border-style: solid; */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* explicacion de la app */
+    .descriptionTxt {
+        position: relative;
+        left: 100px;
+        top: 50px;
+        width: 1400px;
+        font-size: 15pt;
+        font-weight: bold;
+        /* border-style: solid; */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* boton para obtener comida */
+    .buttonGetFood {
+        position: relative;
+        left: 600px;
+        top: 90px;
+        width: 300px;
+        height: 40px;
+        border-style: solid;
+        border-width: 3px;
+        font-size: 15pt;
+    }
+    /* Caracteristicas de plato */
+    /* nombre */
+    .nombreComida {
+        position: relative;
+        left: 20px;
+        top: 150px;
+        width: 500px;
+        font-size: 17pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .mealName {
+        position: relative;
+        left: 230px;
+        top: -25px;
+        font-size: 17pt;
+        width: 240px;
+        height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* region */
+    .regionComida {
+        position: relative;
+        left: 20px;
+        top: 150px;
+        width: 400px;
+        font-size: 17pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .mealArea {
+        position: relative;
+        left: 230px;
+        top: -25px;
+        font-size: 17pt;
+        width: 240px;
+        height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* categoria */
+    .categoriaComida {
+        position: relative;
+        left: 20px;
+        top: 150px;
+        width: 400px;
+        font-size: 17pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .mealCategory {
+        position: relative;
+        left: 250px;
+        top: -25px;
+        font-size: 17pt;
+        width: 240px;
+        height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* tags de la comida */
+    .tagsComida {
+        position: relative;
+        left: 20px;
+        top: 150px;
+        width: 400px;
+        font-size: 17pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .mealTags {
+        position: relative;
+        left: 220px;
+        top: -25px;
+        font-size: 17pt;
+        width: 240px;
+        height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* video de comida */
+    .videoComida {
+        position: relative;
+        left: 20px;
+        top: 150px;
+        width: 620px;
+        font-size: 17pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .mealVideo {
+        position: relative;
+        left: 180px;
+        top: -25px;
+        font-size: 17pt;
+        width: 600px;
+        height: 60px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* imagen */
+    .mealImg {
+        position: absolute;
+        left: 960px;
+        top: 250px;
+    }
+    /* contenedor dinamico y responsivo que muestra informacion de recetas */
+    .contenedorInfo {
+        background-color: rgb(243, 237, 237);
+        position: relative;
+        /* width: 1514px; */
+        /* border-style: solid; */
+        border-width: 3px;
+        text-align: center;
+    }
+    /* Seccion que muestra la variedad de recetas */
+    .titleSection {
+        font-size: 25pt;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #171717
+    }
+    /* informacion nutrimental */
+    .form {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    /* recetas extras */
+    .recipes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+        grid-gap: 30px;
+        margin-top: 32px;
+    }
+    /* fondo creado para cada una de las recetas */
+    .recipe {
+        background: #fff;
+        border-radius: 30px;
+        position: relative;
+    }
+    /* imagen de las recetas */
+    .img {
+        width: 200px;
+        height: 200px;
+        border-radius: 40%;
+    }
+    /* pie de pagina */
+    .piePag {
+        /* border-style: solid; */
+        width: 1514px;
+        height: 200px;
+        background-color: rgb(102, 165, 112);
+    }
+    .creador {
+        position: relative;
+        top: 60px;
+        left: 20px;
+        width: 320px;
+        font-size: 13pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #ffffffd3;
+    }
+    .asignatura {
+        position: relative;
+        top: -10px;
+        left: 650px;
+        width: 300px;
+        font-size: 13pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #ffffffd3;
+    }
+    .university {
+        position: relative;
+        top: -70px;
+        left: 1200px;
+        width: 300px;
+        text-align: center;
+        font-size: 13pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #ffffffd3;
+    }
+}
+
+
+/* pantallas de 681 a 1024 (tablets y monitores)*/
+
+@media screen and (min-width: 681px) and (max-width: 1024px) {
+    .loginContainer {
+        width: 990px;
+        height: 200px;
+        background-color: rgb(243, 237, 237);
+        /* border-style: solid; */
+    }
+    /* estilo de los input */
+    input {
+        outline: none;
+        display: block;
+        width: 100%;
+        border: 1px solid;
+        margin: 0 0 20px;
+        padding: 10px 15px;
+        box-sizing: border-box;
+    }
+    .formularios {
+        position: relative;
+        top: -20px;
+        left: 400px;
+        width: 300px;
+        height: 200px;
+        /* border-style: solid; */
+        background-color: rgb(243, 237, 237);
+    }
+    /* encabezado de pagina estilo */
+    .encabezadoPag {
+        width: 990px;
+        height: 200px;
+        background-color: rgb(243, 237, 237);
+        /* border-style: solid; */
+    }
+    /* logo */
+    .nutribot {
+        position: absolute;
+        left: 40px;
+    }
+    /* estilo de botones del encabezado */
+    button {
+        margin: 5px;
+    }
+    .bttn {
+        width: 170px;
+        height: 50px;
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 15px 30px;
+        font-family: 'Lato', sans-serif;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        left: 250px;
+        top: 60px;
+        display: inline-block;
+        outline: none;
+    }
+    .menu {
+        background: linear-gradient(0deg, rgba(24, 103, 75, 1) 0%, rgba(24, 207, 102, 1) 100%);
+        border: none;
+    }
+    .menu:hover {
+        background: linear-gradient(0deg, rgba(24, 103, 75, 1) 0%, rgba(24, 176, 75, 1) 100%);
+        border: none;
+    }
+    /* Contenedor generador de recetas aleatorias */
+    .contenedorRecetas {
+        background-color: rgb(243, 237, 237);
+        position: relative;
+        width: 990px;
+        height: 650px;
+        border-width: 3px;
+    }
+    /* texto de bienvenida */
+    .headerTxt {
+        position: relative;
+        left: 50px;
+        top: 10px;
+        width: 900px;
+        font-size: 15pt;
+        font-weight: bold;
+        text-align: center;
+        /* border-style: solid; */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* explicacion de la app */
+    .descriptionTxt {
+        position: relative;
+        left: 10px;
+        top: 50px;
+        width: 970px;
+        font-size: 13pt;
+        text-align: center;
+        /* border-style: solid; */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* boton para obtener comida */
+    .buttonGetFood {
+        position: relative;
+        left: 410px;
+        top: 80px;
+        width: 150px;
+        height: 40px;
+        border-style: solid;
+        border-width: 3px;
+        font-size: 10pt;
+    }
+    /* Caracteristicas de plato */
+    /* nombre */
+    .nombreComida {
+        position: relative;
+        left: 20px;
+        top: 80px;
+        width: 190px;
+        font-size: 14pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .mealName {
+        position: relative;
+        font-size: 15pt;
+        width: 240px;
+        height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* region */
+    .regionComida {
+        position: relative;
+        left: 20px;
+        top: 90px;
+        width: 400px;
+        font-size: 14pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .mealArea {
+        position: relative;
+        font-size: 14pt;
+        width: 240px;
+        height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* categoria */
+    .categoriaComida {
+        position: relative;
+        left: 20px;
+        top: 90px;
+        width: 400px;
+        font-size: 14pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .mealCategory {
+        position: relative;
+        font-size: 14pt;
+        width: 240px;
+        height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* tags de la comida */
+    .tagsComida {
+        position: relative;
+        left: 20px;
+        top: 100px;
+        width: 400px;
+        font-size: 14pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .mealTags {
+        position: relative;
+        font-size: 14pt;
+        width: 240px;
+        height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* video de comida */
+    .videoComida {
+        position: relative;
+        left: 20px;
+        top: 110px;
+        width: 620px;
+        font-size: 14pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .mealVideo {
+        position: relative;
+        font-size: 14pt;
+        width: 600px;
+        height: 60px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* imagen */
+    .mealImg {
+        position: absolute;
+        left: 550px;
+        top: 250px;
+    }
+    /* contenedor dinamico y responsivo que muestra informacion de recetas */
+    .contenedorInfo {
+        background-color: rgb(243, 237, 237);
+        position: relative;
+        width: 990px;
+        /* border-style: solid; */
+        border-width: 3px;
+        text-align: center;
+    }
+    /* Seccion que muestra la variedad de recetas */
+    .titleSection {
+        font-size: 15pt;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #171717
+    }
+    /* informacion nutrimental */
+    .form {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    /* recetas extras */
+    .recipes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+        grid-gap: 30px;
+        margin-top: 32px;
+    }
+    /* fondo creado para cada una de las recetas */
+    .recipe {
+        background: #fff;
+        border-radius: 30px;
+        position: relative;
+    }
+    /* imagen de las recetas */
+    .img {
+        width: 200px;
+        height: 200px;
+        border-radius: 40%;
+    }
+    /* pie de pagina */
+    .piePag {
+        width: 990px;
+        height: 200px;
+        background-color: rgb(102, 165, 112);
+    }
+    .creador {
+        position: relative;
+        top: 60px;
+        left: 10px;
+        width: 320px;
+        font-size: 10pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #ffffffd3;
+    }
+    .asignatura {
+        position: relative;
+        top: 10px;
+        left: 350px;
+        width: 300px;
+        font-size: 10pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #ffffffd3;
+    }
+    .university {
+        position: relative;
+        top: -30px;
+        left: 660px;
+        width: 300px;
+        text-align: center;
+        font-size: 10pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #ffffffd3;
+    }
+}
+
+
+/* pantallas de 0 a 680 (dispositivos moviles)*/
+
+@media screen and (min-width: 0px) and (max-width: 680px) {
+    .loginContainer {
+        width: 500px;
+        height: 200px;
+        background-color: rgb(243, 237, 237);
+        text-align: center;
+        /* border-style: solid; */
+    }
+    /* estilo de los input */
+    input {
+        outline: none;
+        display: block;
+        width: 100%;
+        border: 1px solid;
+        margin: 0 0 20px;
+        padding: 10px 15px;
+        box-sizing: border-box;
+    }
+    .formularios {
+        position: relative;
+        top: 55px;
+        left: 90px;
+        width: 500px;
+        height: 200px;
+        /* border-style: solid; */
+        background-color: rgb(243, 237, 237);
+    }
+    /* Definicion de estilos */
+    /* encabezado de pagina estilo */
+    .encabezadoPag {
+        width: 660px;
+        height: 200px;
+        background-color: rgb(243, 237, 237);
+    }
+    /* logo */
+    .nutribot {
+        position: absolute;
+        left: 250px;
+    }
+    /* estilo de botones del encabezado */
+    button {
+        margin: 5px;
+    }
+    .bttn {
+        width: 150px;
+        height: 50px;
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 15px 30px;
+        font-family: 'Lato', sans-serif;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        top: 200px;
+        display: inline-block;
+        outline: none;
+    }
+    .menu {
+        background: linear-gradient(0deg, rgba(24, 103, 75, 1) 0%, rgba(24, 207, 102, 1) 100%);
+        border: none;
+    }
+    .menu:hover {
+        background: linear-gradient(0deg, rgba(24, 103, 75, 1) 0%, rgba(24, 176, 75, 1) 100%);
+        border: none;
+    }
+    /* Contenedor generador de recetas aleatorias */
+    .contenedorRecetas {
+        background-color: rgb(243, 237, 237);
+        position: relative;
+        top: 70px;
+        width: 660px;
+        height: 650px;
+        border-width: 3px;
+    }
+    /* texto de bienvenida */
+    .headerTxt {
+        position: relative;
+        left: 40px;
+        top: 10px;
+        width: 600px;
+        font-size: 13pt;
+        font-weight: bold;
+        text-align: center;
+        /* border-style: solid; */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* explicacion de la app */
+    .descriptionTxt {
+        position: relative;
+        left: 10px;
+        top: 30px;
+        width: 630px;
+        font-size: 11pt;
+        /* border-style: solid; */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* boton para obtener comida */
+    .buttonGetFood {
+        position: relative;
+        left: 430px;
+        top: 300px;
+        width: 200px;
+        height: 60px;
+        border-style: solid;
+        border-width: 3px;
+        font-size: 14pt;
+    }
+    /* Caracteristicas de plato */
+    /* nombre */
+    .nombreComida {
+        position: relative;
+        left: 410px;
+        top: -10px;
+        width: 190px;
+        font-size: 12pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .mealName {
+        position: relative;
+        font-size: 12pt;
+        width: 240px;
+        height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* region */
+    .regionComida {
+        position: relative;
+        left: 410px;
+        top: 10px;
+        width: 200px;
+        font-size: 12pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .mealArea {
+        position: relative;
+        font-size: 12pt;
+        width: 200px;
+        height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* categoria */
+    .categoriaComida {
+        position: relative;
+        left: 410px;
+        top: 30px;
+        width: 200px;
+        font-size: 12pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .mealCategory {
+        position: relative;
+        font-size: 12pt;
+        width: 200px;
+        height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* tags de la comida */
+    .tagsComida {
+        position: relative;
+        left: 20px;
+        top: 220px;
+        width: 200px;
+        font-size: 12pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .mealTags {
+        position: relative;
+        font-size: 12pt;
+        width: 200px;
+        height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* video de comida */
+    .videoComida {
+        position: relative;
+        left: 20px;
+        top: 220px;
+        width: 620px;
+        font-size: 12pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .mealVideo {
+        position: relative;
+        font-size: 12pt;
+        width: 600px;
+        height: 60px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* imagen */
+    .mealImg {
+        position: absolute;
+        top: 130px;
+    }
+    /* contenedor dinamico y responsivo que muestra informacion de recetas */
+    .contenedorInfo {
+        background-color: rgb(243, 237, 237);
+        position: relative;
+        top: 70px;
+        width: 660px;
+        border-width: 3px;
+        text-align: center;
+    }
+    /* Seccion que muestra la variedad de recetas */
+    .titleSection {
+        font-size: 12pt;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #171717
+    }
+    /* informacion nutrimental */
+    .form {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    /* recetas extras */
+    .recipes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+        grid-gap: 30px;
+        margin-top: 32px;
+    }
+    /* fondo creado para cada una de las recetas */
+    .recipe {
+        background: #fff;
+        border-radius: 30px;
+        position: relative;
+    }
+    /* imagen de las recetas */
+    .img {
+        width: 200px;
+        height: 200px;
+        border-radius: 40%;
+    }
+    /* pie de pagina */
+    .piePag {
+        position: relative;
+        top: 70px;
+        width: 660px;
+        height: 200px;
+        background-color: rgb(102, 165, 112);
+    }
+    .creador {
+        position: relative;
+        top: 30px;
+        left: 30px;
+        width: 320px;
+        font-size: 10pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #ffffffd3;
+    }
+    .asignatura {
+        position: relative;
+        top: -20px;
+        left: 400px;
+        width: 300px;
+        font-size: 10pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #ffffffd3;
+    }
+    .university {
+        position: relative;
+        top: 30px;
+        left: 150px;
+        width: 300px;
+        text-align: center;
+        font-size: 10pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #ffffffd3;
+    }
+}
