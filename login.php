@@ -56,7 +56,6 @@ unset($_POST['contra']);
                 <!-- <button class="bttn menu">Buscar Receta</button> -->
                 <!-- <button class="bttn menu">Reviews de Nutribot</button> -->
                 <button class="bttn menu"  onclick="location.href='registros.php'">Crear Cuenta</button>
-
             </div>
         </div>
         <div class="loginContainer">

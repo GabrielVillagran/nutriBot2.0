@@ -38,7 +38,7 @@ class CAD
         if($query->execute())
         {
             // echo "El usuario ". $nombre. " se a agregado correctamente";
-            echo '<script> alert("El usuario se a agregado correctamente, regresa al inicio para iniciar sesion") </script>';
+            echo '<script> alert("Comentario agregado con exito") </script>';
 
         }
         else
@@ -69,11 +69,6 @@ class CAD
             {
                 echo '<script> alert("Usuario no encontrado, por favor, registrese para seguir usando nutribot") </script>';
             }
-                //Mas de un registro
-            // while($row = $query->fetch(PDO::FETCH_ASSOC)){
-            //     $datos[] = $row;
-            // }
-            // print_r($datos);
         }
         else{
             return false;
@@ -99,12 +94,12 @@ class CAD
             return 0;
         }
     }
-
+// trae usuarios y elimina los usuarios
     static public function traeUsuarios()
     {
         $con = new Conexion(); //Establecer la conexion a la BD
         $con->_construct();
-        $query = $con->conectar()->prepare("SELECT * FROM usuario");
+        $query = $con->conectar()->prepare("SELECT * FROM usuarios");
         if($query->execute())
         {
             $datos=[];
@@ -127,7 +122,7 @@ class CAD
         //Enviar a la base de datos
         $con = new Conexion(); //Establecer la conexion a la BD
         $con->_construct();
-        $query = $con->conectar()->prepare("DELETE FROM usuario WHERE id_usuario = $idUsuario ");
+        $query = $con->conectar()->prepare("DELETE FROM usuarios WHERE id_usuario = $idUsuario ");
         if($query->execute())
         {
             
@@ -140,7 +135,47 @@ class CAD
             print_r($con->conectar()->errorinfo());
         }
     }
+    // trae y elimina los comentarios
+    static public function traeReview()
+    {
+        $con = new Conexion(); //Establecer la conexion a la BD
+        $con->_construct();
+        $query = $con->conectar()->prepare("SELECT * FROM comment");
+        if($query->execute())
+        {
+            $datos=[];
+            //Un solo registro
+            while($row = $query->fetch(PDO::FETCH_ASSOC))
+            {
+                $datos[] = $row;
+            }
+            #print_r($datos);
+            return $datos;
+            
+        }
+        else{
+            return false;
+        }
+    }
 
+    static public function eliminaComentario($id_comentarios)
+    {
+        //Enviar a la base de datos
+        $con = new Conexion(); //Establecer la conexion a la BD
+        $con->_construct();
+        $query = $con->conectar()->prepare("DELETE FROM comment WHERE id_comentarios = $id_comentarios");
+        if($query->execute())
+        {
+            
+            return 1;
+
+        }
+        else
+        {
+            echo "Hubo un error";
+            print_r($con->conectar()->errorinfo());
+        }
+    }
  }
 
 ?>
