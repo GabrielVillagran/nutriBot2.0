@@ -18,7 +18,7 @@ if(isset($_POST['nombre']) && isset($_POST['correo']) && isset($_POST['contra'])
 }
 else
 {
-    echo "No pude ingresar";
+    // echo "No pude ingresar";
 }
 unset($_POST['nombre']);
 unset($_POST['correo']);

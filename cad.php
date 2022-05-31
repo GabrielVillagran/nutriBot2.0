@@ -23,7 +23,7 @@ class CAD
         }
         else
         {
-            echo "Hubo un error";
+            // echo "Hubo un error";
             print_r($con->conectar()->errorinfo());
         }
     }
@@ -43,7 +43,7 @@ class CAD
         }
         else
         {
-            echo "Hubo un error";
+            // echo "Hubo un error";
             print_r($con->conectar()->errorinfo());
         }
     }

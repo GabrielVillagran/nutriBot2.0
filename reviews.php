@@ -11,7 +11,7 @@ if(isset($_POST['nombre']) && isset($_POST['review']) )
 }
 else
 {
-    echo '<script> alert("Error al agregar comentario") </script>';
+    // echo '<script> alert("Error al agregar comentario") </script>';
 }
 unset($_POST['nombre']);
 unset($_POST['review']);

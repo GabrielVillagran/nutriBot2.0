@@ -53,8 +53,6 @@ unset($_POST['contra']);
             <!-- botones de la pagina -->
             <div class="mainMenu">
                 <button class="bttn menu" onclick="location.href='info.html'">Quienes somos</button>
-                <!-- <button class="bttn menu">Buscar Receta</button> -->
-                <!-- <button class="bttn menu">Reviews de Nutribot</button> -->
                 <button class="bttn menu"  onclick="location.href='registros.php'">Crear Cuenta</button>
             </div>
         </div>
@@ -116,6 +114,27 @@ unset($_POST['contra']);
             </div>
             <div class="recipes"></div>
         </div>
+        <div class="muestraReview">
+            <h1>Comentarios de la pagina</h1>
+             <?php
+                $cad = new CAD();
+                $datos=$cad->traeReview();
+                if($datos)
+                {
+                    echo "<table border='2' cellpading='4' cellspacing='0'><tr>";
+                    echo '</tr>';
+                foreach($datos as $registro)
+                 {
+                    echo '<tr>';
+                    $id_comentarios=$registro['id_comentarios'];
+                    echo "<td>".$registro['nameComentario']."</td>";
+                    echo "<td>".$registro['comentario']."</td>";
+                    echo '</tr>';
+                }   
+                    echo '</table>';
+                }
+            ?> 
+        </div>
         <!-- Pie de pagina -->
         <div class="piePag">
             <!-- creador -->
@@ -138,25 +157,3 @@ unset($_POST['contra']);
     <script src="./JS/consultaAPI1.js"></script>
 </footer>
 </html>
-<!--  -->
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<form action="login.php" method="POST">
-    <span> Escribe tu nombre : </span>
-    <input type="text" name= "nombre">
-    <br>
-    <span> Escribe tu contraseña </span>
-    <input type="text" name= "contra">
-    <br>
-    <input type="submit" value ="Inicia Sesion">
-    </form>
-</body>
-</html> -->
-<!------------------------------------------------->

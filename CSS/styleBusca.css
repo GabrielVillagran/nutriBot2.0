@@ -124,6 +124,11 @@ body {
         height: 200px;
         border-radius: 40%;
     }
+    .reviews {
+        position: relative;
+        top: -70px;
+        left: 1200px;
+    }
 }
 
 

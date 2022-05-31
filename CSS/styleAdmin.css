@@ -221,6 +221,21 @@ body {
         top: 100px;
         width: 300px;
     }
+    /* estilo de form review */
+    .containerEliminaUsuario {
+        border-style: solid;
+        position: absolute;
+        width: 100px;
+        left: 00px;
+        top: 00px;
+    }
+    .containerEliminaReview {
+        border-style: solid;
+        position: absolute;
+        width: 1200px;
+        left: 200px;
+        top: 600px;
+    }
 }
 
 

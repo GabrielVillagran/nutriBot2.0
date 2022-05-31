@@ -26,7 +26,7 @@
             <div class="mainMenu">
                 <button class="bttn menu" onclick="location.href='admin.php'">Administrador</button>
                 <button class="bttn menu " onclick="location.href='logout.php'">Cerrar Sesion</button>
-                </div>
+            </div>
             <!-- muestra y elimina usuarios -->
             <div class="containerEliminaUsuario">
                 <p>Elimina usuario</p>
