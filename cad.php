@@ -7,6 +7,7 @@ class CAD
     // realizar la conexion a la BD
     public $con;
     // agregar datos (usuarios a la BD)
+    // agrega usuario
     static public function agregaUsuario($name,$mail,$password,$diabetes,$hipertension,$peso, $estatura, $edad, $otra)
     {
         //Enviar a la base de datos
@@ -14,6 +15,26 @@ class CAD
         $con->_construct();
         // consulta a realizar 
         $query = $con->conectar()->prepare("INSERT INTO usuarios (nombre, correo, contra, diabetes, hipertension, peso, estatura, edad, otra) VALUE ('$name','$mail','$password','$diabetes','$hipertension','$peso', '$estatura', '$edad', '$otra')");
+        if($query->execute())
+        {
+            // echo "El usuario ". $nombre. " se a agregado correctamente";
+            echo '<script> alert("El usuario se a agregado correctamente, regresa al inicio para iniciar sesion") </script>';
+
+        }
+        else
+        {
+            echo "Hubo un error";
+            print_r($con->conectar()->errorinfo());
+        }
+    }
+    // agrega comentario
+    static public function agregaReview($name,$review, $id_usuario)
+    {
+        //Enviar a la base de datos
+        $con = new Conexion(); //Establecer la conexion a la BD
+        $con->_construct();
+        // consulta a realizar 
+        $query = $con->conectar()->prepare("INSERT INTO comment (nameComentario, comentario, id_usuarios) VALUE ('$name','$review', '$id_usuario')");
         if($query->execute())
         {
             // echo "El usuario ". $nombre. " se a agregado correctamente";
