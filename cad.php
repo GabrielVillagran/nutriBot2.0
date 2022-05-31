@@ -17,7 +17,7 @@ class CAD
         if($query->execute())
         {
             // echo "El usuario ". $nombre. " se a agregado correctamente";
-            echo '<script> alert("El usuario se a agregado correctamente") </script>';
+            echo '<script> alert("El usuario se a agregado correctamente, regresa al inicio para iniciar sesion") </script>';
 
         }
         else

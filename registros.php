@@ -38,7 +38,7 @@ unset($_POST['otra']);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/styleRegistro.CSS" rel="stylesheet" type="text/css">
+    <link href="CSS/styleRegistro.CSS" rel="stylesheet" type="text/css">
     <title>NutriBot</title>
 </head>
 
@@ -54,8 +54,8 @@ unset($_POST['otra']);
             <!-- botones de la pagina -->
             <div class="mainMenu">
                 <button class="bttn menu" onclick="location.href='info.html'">Quienes somos</button>
-                <button class="bttn menu">Buscar Receta</button>
-                <button class="bttn menu">Reviews de Nutribot</button>
+                <!-- <button class="bttn menu">Buscar Receta</button>
+                <button class="bttn menu">Reviews de Nutribot</button> -->
                 <button class="bttn menu" onclick="location.href='registros.php'">Crear Cuenta</button>
             </div>
         </div>

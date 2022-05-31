@@ -26,28 +26,7 @@
                 <button class="bttn menu " onclick="location.href='logout.php'">Cerrar Sesion</button>
             </div>
         </div>
-            <!-- contenedor de recetarios -->
-            <div class="container ">
-             <header>
-                    <form class="form ">
-                        
-                        <input
-                         name="searchInput"
-                         class="search-bar"
-                         type="text"
-                         autocomplete="off"
-                         required
-                     />
-                      <button class="search-btn ">Search</button>
-                      <!-- gif de preparacion -->
-                      <div class="gifFood">
-                        <img src="https://c.tenor.com/kwkIuLUZLUsAAAAi/cook-meal.gif"" alt="funny GIF" width="200px">
-                      </div>
-                   </form>
-             </header>
-             <!-- boton para realizar la busqueda -->
-                <div class="recetarios"></div>
-            </div>
+            <!--  -->
         <!-- Pie de pagina -->
         <div class="piePag ">
             <!-- creador -->
@@ -66,7 +45,4 @@
         </div>
     </div>
 </body>
-<footer>
-    <script src="./JS/consultaAPI2.js "></script>
-</footer>
 </html>
