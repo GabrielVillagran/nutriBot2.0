@@ -7,7 +7,7 @@ class CAD
     // realizar la conexion a la BD
     public $con;
     // agregar datos (usuarios a la BD)
-    // agrega usuario
+    // metodo que me permitira agregar usuario
     static public function agregaUsuario($name,$mail,$password,$diabetes,$hipertension,$peso, $estatura, $edad, $otra)
     {
         //Enviar a la base de datos
@@ -27,7 +27,7 @@ class CAD
             print_r($con->conectar()->errorinfo());
         }
     }
-    // agrega comentario
+    //  // metodo que me permitira agregar comentario
     static public function agregaReview($name,$review, $id_usuario)
     {
         //Enviar a la base de datos
@@ -47,7 +47,7 @@ class CAD
             print_r($con->conectar()->errorinfo());
         }
     }
-// verificar si un usuario existe (log in)
+// metodo que me permitira verificar si existe un usuario
     static public function verificaUsuario($nombre,$contraseña)
     {
         $con = new Conexion(); //Establecer la conexion a la BD
@@ -74,16 +74,15 @@ class CAD
             return false;
         }
     }
-
+ // metodo que me permitira modificar usuarios
     static public function modificaUsaurio($datosModificar,$idUsuario)
     {
         //Enviar a la base de datos
         $con = new Conexion(); //Establecer la conexion a la BD
         $con->_construct();
-        $query = $con->conectar()->prepare("UPDATE usuario SET $datosModificar WHERE id_usuario = $idUsuario ");
+        $query = $con->conectar()->prepare("UPDATE usuarios SET $datosModificar WHERE id_usuario = $idUsuario ");
         if($query->execute())
         {
-            echo "el usuario".$idUsuario."se ha actualizado correctamente";
             return 1;
 
         }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="CSS/styleBusca.CSS" rel="stylesheet" type="text/css">
+    <link href="CSS/styleIndex.CSS" rel="stylesheet" type="text/css">
     <title>NutriBot</title>
 </head>
 
@@ -20,7 +20,7 @@
             </div>
             <!-- botones de la pagina -->
             <div class="mainMenu">
-                <!-- <button class="bttn menu" onclick="location.href='info.html'">Quienes somos</button> -->
+                <button class="bttn menu" onclick="location.href='modifica.php'">Modifica Datos</button>
                 <button class="bttn menu " onclick="location.href='index.php'">Buscar Receta</button>
                 <button class="bttn menu " onclick="location.href='reviews.php'">Reviews de Nutribot</button>
                 <button class="bttn menu " onclick="location.href='logout.php'">Cerrar Sesion</button>
